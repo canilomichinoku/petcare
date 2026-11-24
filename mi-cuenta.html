@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mi cuenta | PetCare</title>
+<meta name="description" content="PetCare: cuidado, salud y adopción de mascotas.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body data-page="cuenta">
+<div id="nav" style="display:contents"></div>
+<div class="banner" id="banner"></div>
+<div class="wrap pinfo"><img class="avatar" id="av" alt=""><div class="txt"><h1 id="uName"></h1><p id="uMeta"></p><p id="uBio"></p></div><a class="btn alt" href="perfil.html">Editar perfil</a></div>
+<main class="wrap dashmain"><div class="stats" id="stats"></div><div class="cols">
+<div class="panel"><h2>Mis mascotas</h2>
+<form id="fPet"><p class="err" role="alert"></p>
+<div class="row2"><label>Nombre<input name="name" maxlength="60" required></label><label>Especie<select name="species"><option>Perro</option><option>Gato</option><option>Ave</option><option>Conejo</option><option>Hámster</option><option>Otro</option></select></label></div>
+<div class="row2"><label>Raza<input name="breed" maxlength="60"></label><label>Edad (años)<input name="age" type="number" min="0" max="40"></label></div>
+<label>Foto<input name="photo" type="file" accept="image/jpeg,image/png,image/webp"></label>
+<button class="btn">Agregar mascota</button></form>
+<div class="pets" id="pets"></div></div>
+<div class="panel"><h2>Agendar cita</h2><div id="apptBox"></div><h3 style="margin-top:1.5rem">Mis citas</h3><div id="appts"></div></div></div></main>
+<div id="foot" style="display:contents"></div>
+<script src="data.js"></script><script src="app.js"></script></body></html>

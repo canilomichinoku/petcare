@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Editar perfil | PetCare</title>
+<meta name="description" content="PetCare: cuidado, salud y adopción de mascotas.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body data-page="perfil">
+<div id="nav" style="display:contents"></div>
+<header class="phead"><div class="wrap"><h1>Editar perfil</h1><p>Personaliza tu cuenta.</p></div></header>
+<main class="wrap editgrid">
+<div class="panel"><h2>Banner y foto</h2>
+<div class="banner small" id="banPrev"></div><div class="avrow"><img class="avatar" id="avPrev" alt="Tu foto de perfil"></div>
+<form id="fAv"><p class="err" role="alert"></p><label>Foto de perfil (JPG, PNG o WEBP, máx. 3 MB)<input type="file" name="avatar" accept="image/jpeg,image/png,image/webp" required></label><button class="btn sm">Subir foto</button></form>
+<button class="btn sm del" data-act="rmAv" style="margin-top:.7rem" hidden>Quitar foto</button><hr>
+<form id="fBan"><p class="err" role="alert"></p><label>Banner (recomendado 1500×400, máx. 4 MB)<input type="file" name="banner" accept="image/jpeg,image/png,image/webp" required></label><button class="btn sm">Subir banner</button></form>
+<button class="btn sm del" data-act="rmBan" style="margin-top:.7rem" hidden>Quitar banner</button></div>
+<div>
+<form id="fProf" class="panel"><h2>Datos personales</h2><p class="err" role="alert"></p>
+<label>Nombre<input name="name" maxlength="80" required></label>
+<label>Correo<input name="email" type="email" required></label>
+<div class="row2"><label>Teléfono<input name="phone" maxlength="20"></label><label>Ciudad<input name="city" maxlength="60"></label></div>
+<label>Biografía (máx. 200)<textarea name="bio" rows="3" maxlength="200"></textarea></label>
+<button class="btn">Guardar cambios</button></form>
+<form id="fPass" class="panel"><h2>Cambiar contraseña</h2><p class="err" role="alert"></p>
+<label>Contraseña actual<input name="current_password" type="password" required></label>
+<label>Nueva contraseña (mín. 6)<input name="password" type="password" required></label>
+<label>Repite la nueva contraseña<input name="password_confirmation" type="password" required></label>
+<button class="btn alt">Actualizar contraseña</button></form></div></main>
+<div id="foot" style="display:contents"></div>
+<script src="data.js"></script><script src="app.js"></script></body></html>
